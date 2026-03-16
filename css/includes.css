@@ -1,0 +1,140 @@
+/* Simple baseline so everything looks consistent */
+* { box-sizing: border-box; }
+
+body {
+    margin: 0;
+    font-family: Georgia, "Times New Roman", serif;
+    color: #2b2b2b;
+}
+
+.container {
+    width: min(1100px, 92%);
+    margin: 0 auto;
+}
+
+/* Top strip */
+.top-strip {
+    background: #4b2a2a; /* dark, like your wireframe top */
+    color: #fff;
+    font-size: 12px;
+    letter-spacing: 0.2px;
+}
+
+.top-strip__text {
+    margin: 0;
+    padding: 6px 0;
+    text-align: center;
+}
+
+/* Header */
+.site-header {
+    background: #f4dada; /* soft pink-ish */
+    border-bottom: 2px solid #2b2b2b;
+}
+
+.site-header__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    padding: 14px 0;
+}
+
+.brand__logo {
+    height: 60px;
+    width: auto;
+    display: block;
+}
+
+.nav {
+    display: flex;
+    gap: 22px;
+    align-items: center;
+    padding: 10px 14px;
+    border: 2px solid #2b2b2b; /* wireframe box feel */
+    background: rgba(255, 255, 255, 0.35);
+}
+
+.nav__link {
+    color: #2b2b2b;
+    text-decoration: none;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 0.6px;
+}
+
+.nav__link:hover,
+.nav__link:focus-visible {
+    text-decoration: underline;
+}
+
+/* Footer */
+.site-footer {
+    background: #f4dada;
+    border-top: 2px solid #2b2b2b;
+    padding: 18px 0;
+}
+
+.site-footer__inner {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    gap: 20px;
+    align-items: end;
+}
+
+.footer-title {
+    margin: 0 0 10px;
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: 0.6px;
+}
+
+.social {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 10px;
+}
+
+.social__link {
+    color: #2b2b2b;
+    text-decoration: none;
+    border: 2px solid #2b2b2b;
+    padding: 6px 10px;
+    font-size: 12px;
+}
+
+.social__link:hover,
+.social__link:focus-visible {
+    background: rgba(255, 255, 255, 0.35);
+}
+
+.footer-btn {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    color: #2b2b2b;
+    border: 2px solid #2b2b2b;
+    padding: 8px 12px;
+    margin: 0 0 10px;
+    min-width: 180px;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.6px;
+}
+
+.footer-btn:hover,
+.footer-btn:focus-visible {
+    background: rgba(255, 255, 255, 0.35);
+}
+
+.footer-logo {
+    height: 80px;
+    width: auto;
+    display: block;
+    margin-left: auto;
+}
+
+.copyright {
+    margin: 0;
+    font-size: 12px;
+}
