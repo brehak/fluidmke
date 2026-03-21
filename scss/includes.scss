@@ -5,6 +5,9 @@
   --c-blue-900: #235789;
   --c-blue-500: #48acf0;
 
+  --font-heading: "Bodoni Moda", Georgia, serif;
+  --font-body: "Mako", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+
   --c-ink: #2b2b2b;
   --border: 2px solid var(--c-ink);
 }
@@ -18,11 +21,13 @@
   margin: 0 auto;
 }
 
+/* Top strip */
 .top-strip {
   background: var(--c-blue-900);
   color: var(--c-white);
   font-size: 12px;
   letter-spacing: 0.3px;
+  font-family: var(--font-body);
 }
 
 .top-strip__text {
@@ -31,9 +36,11 @@
   text-align: center;
 }
 
+/* Header */
 .site-header {
   background: var(--c-white);
   border-bottom: var(--border);
+  font-family: var(--font-body);
 }
 
 .site-header__inner {
@@ -56,33 +63,40 @@
   display: block;
 }
 
+/* Nav */
 .nav {
   display: flex;
-  gap: 22px;
+  gap: 18px;
   align-items: center;
   padding: 10px 14px;
   border: var(--border);
-  background: rgba(255, 255, 255, 0.7);
+  background: rgba(255, 255, 255, 0.92);
 }
 
 .nav__link {
-  color: var(--c-blue-900);
+  color: var(--c-ink);
   text-decoration: none;
-  font-size: 14px;
+  font-size: 16px;
+  font-weight: 600;
   text-transform: uppercase;
-  letter-spacing: 0.6px;
+  letter-spacing: 0.4px;
+  padding: 6px 8px;
+  border-radius: 4px;
 }
 
 .nav__link:hover,
 .nav__link:focus-visible {
-  color: var(--c-blue-500);
+  color: var(--c-blue-900);
+  outline: none;
   text-decoration: underline;
+  text-underline-offset: 3px;
 }
 
 .site-footer {
   background: var(--c-white);
   border-top: var(--border);
   padding: 18px 0;
+  font-family: var(--font-body);
 }
 
 .site-footer__inner {
@@ -98,6 +112,8 @@
   text-transform: uppercase;
   letter-spacing: 0.6px;
   color: var(--c-blue-900);
+  font-family: var(--font-heading);
+  font-weight: 700;
 }
 
 .social {
@@ -107,42 +123,42 @@
 }
 
 .social__link {
-  color: var(--c-blue-900);
+  color: var(--c-ink);
   text-decoration: none;
   border: var(--border);
-  padding: 6px 10px;
-  font-size: 12px;
+  padding: 8px 12px;
+  font-size: 13px;
   background: var(--c-white);
 }
 
 .social__link:hover,
 .social__link:focus-visible {
-  color: var(--c-blue-500);
-  border-color: var(--c-blue-500);
+  color: var(--c-blue-900);
+  border-color: var(--c-blue-900);
 }
 
 .footer-btn {
   display: block;
   text-align: center;
   text-decoration: none;
-  color: var(--c-blue-900);
+  color: var(--c-ink);
   border: var(--border);
-  padding: 8px 12px;
+  padding: 10px 12px;
   margin: 0 0 10px;
   min-width: 180px;
   font-size: 12px;
+  font-weight: 600;
   text-transform: uppercase;
-  letter-spacing: 0.6px;
+  letter-spacing: 0.5px;
   background: var(--c-white);
 }
 
 .footer-btn:hover,
 .footer-btn:focus-visible {
-  color: var(--c-blue-500);
-  border-color: var(--c-blue-500);
+  color: var(--c-blue-900);
+  border-color: var(--c-blue-900);
 }
 
-/* Optional yellow version if you ever want a highlighted CTA */
 .footer-btn--yellow {
   background: var(--c-yellow);
   border: var(--border);
