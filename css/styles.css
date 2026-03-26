@@ -31,7 +31,7 @@ p {
 
 h1, h2, h3, h4 {
   font-family: var(--font-heading);
-  font-weight: 800;
+  font-weight: 1600;
   color: var(--c-blue-900);
 }
 
@@ -72,9 +72,21 @@ a:focus-visible {
 }
 
 .section-title {
-  text-align: center;
-  margin: 0 0 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   letter-spacing: 0.5px;
+  gap: 18px;
+}
+
+.section-title::before,
+.section-title::after {
+  content: "";
+  flex: 1;
+  max-width: 220px;
+  height: 2px;
+  background: var(--c-blue-900);
+  opacity: 0.9;
 }
 
 .section-subtitle {
@@ -95,7 +107,17 @@ a:focus-visible {
 
 .grid--2 {
   grid-template-columns: 1fr 1fr;
-  align-items: start;
+  align-items: stretch;
+}
+
+.grid--2 .card {
+  height: 100%;
+}
+
+.grid--2 .info-card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }
 
 .grid--3 {
@@ -125,6 +147,11 @@ button:focus-visible {
 }
 
 .card {
+  padding: 18px;
+  background: rgba(255, 255, 255, 0.35);
+}
+
+.card2 {
   border: var(--border);
   padding: 18px;
   background: rgba(255, 255, 255, 0.35);
